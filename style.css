@@ -54,6 +54,10 @@ header img {
   font-weight: bold;
 }
 
+.nav-container button a {
+  color: white;
+}
+
 .uil {
   display: none;
 }

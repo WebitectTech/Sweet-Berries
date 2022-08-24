@@ -1,0 +1,138 @@
+:root {
+    --color-primary: #FF4C4C;
+    --color-secondary: #A94E97;
+    --text-black: #000000;
+    --text-gray: #83869A;
+    --link-color: #FF4C4C;
+    --text-font: Roboto', sans-serif;
+  }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 32rem;
+}
+
+.container-left {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--color-secondary);
+    padding: 20px;
+}
+
+.container-left h2 {
+    padding: 10px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.container-left p {
+    padding: 20px;
+}
+
+.image-container {
+    display: flex;
+}
+
+.image-one, .image-two {
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 190px;
+    filter: drop-shadow(1px 2px 4px black);
+    transform: rotate(10deg);
+}
+
+.image-two {
+    position: relative;
+    margin: 10px;
+    top: 20px;
+}
+
+
+
+
+.container-right {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    width: 20%;
+}
+
+.container-right h2 {
+    padding: 10px;
+}
+
+.container-right i {
+    font-size: 25px;
+    border-radius: 5px;
+    width: 40px;
+    color: var(--color-secondary);
+    position: absolute;
+}
+
+.container-right input {
+    border: none;
+    padding-left: 40px;
+    border: 1px solid var(--color-secondary);
+    border-radius: 8px;
+    height: 30px;
+    width: 400px;
+}
+
+.container-right .account-email {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
+.container-right .password {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
+.container-right .confirm-password {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
+.container-right .account-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+}
+
+.container-right .first-name {
+    display: flex;
+    align-items: center;
+}
+.container-right .last-name {
+    display: flex;
+    align-items: center;
+}
+
+.container-right .account-name i {
+    width: 30px;
+    padding-left: 11px;
+}
+
+.container-right .account-name input {
+    width: 150px;
+    padding-left: 40px;
+}
+
+.container-right button {
+    margin: 30px;
+    padding: 10px;
+}
+
