@@ -18,17 +18,25 @@ body {
   font-family: var(--text-font);
 }
 
+/**
+* ! Start of header
+**/
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header img {
-  height: 160px;
+header.burger {
+  display: none;
 }
 
-.nav-container {
+header #menuchk {
+  display: none;
+}
+
+header .nav-container {
   display: flex;
   align-items: center;
   padding: 75px;
@@ -36,15 +44,7 @@ header img {
   font-size: 22px;
 }
 
-#menuchk {
-  display: none;
-}
-
-.burger {
-  display: none;
-}
-
-.nav-container button {
+header .nav-container button {
   padding: 10px;
   border: none;
   border-radius: 50px;
@@ -54,11 +54,15 @@ header img {
   font-weight: bold;
 }
 
-.nav-container button a {
+header.nav-container button a {
   color: white;
 }
 
-.uil {
+/**
+* ! Start of Content Section
+**/
+
+.burger {
   display: none;
 }
 
@@ -66,39 +70,33 @@ a {
   color: var(--color-primary);
 }
 
-.content-container {
+article {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.cake-img {
-  position: absolute;
-  padding-bottom: 18.5rem;
-  height: 23rem;
-}
-
-.content h1 {
+article .content h1 {
   padding-bottom: 15px;
   font-size: 2.5rem;
 }
 
-.content p {
+article .content p {
   font-size: 1rem;
   color: var(--text-gray);
 }
 
-.content-container img {
+article img {
   width: 55%;
   height: 350px;
   border-radius: 35px;
 }
 
-.card-gradient-mobile {
-  display: none;
-}
+/**
+* ! Start of Main Section
+**/
 
-.card-container {
+main {
   display: grid;
   justify-items: center;
   align-items: center;
@@ -107,7 +105,7 @@ a {
   gap: 15px;
 }
 
-.card {
+main .card {
   display: flex;
   flex-direction: column;
   background: #FFFFFF;
@@ -122,12 +120,22 @@ a {
   height: 250px;
 }
 
-.card a {
+main .card a {
   padding-top: 20px;
   font-weight: bold;
 }
 
-.card-gradient {
+main .cake-img {
+  position: absolute;
+  padding-bottom: 18.5rem;
+  height: 23rem;
+}
+
+main .card-gradient-mobile {
+  display: none;
+}
+
+main .card-gradient {
   display: flex;
   flex-wrap: wrap;
   background: linear-gradient(var(--color-primary), var(--color-secondary));
@@ -140,6 +148,10 @@ a {
   width: 275px;
   height: 250px;
 }
+
+/**
+* ! Start Of Footer Section
+**/
 
 footer {
   background: var(--color-primary);
@@ -154,30 +166,33 @@ footer p {
   font-size: 1.2rem;
 }
 
-/* MEDIA QUERIES */
+/**
+* ! Start Of Media Queries
+**/
+
 @media screen and (max-width: 768px) {
-  .content-container {
+  article {
     display: flex;
     flex-direction: column;
   }
 
-  .content p {
+  article .content p {
     justify-content: flex-start;
   }
 
-  .content-container img {
+  article img {
     width: 75%;
     height: 250px;
     margin-top: 55px;
   }
   
-  .card-container {
+  main {
     display: grid;
     justify-items: center;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    padding-top: 100px;
     gap: 15px;
+    padding-top: 100px;
   }
 
   footer {
@@ -186,11 +201,11 @@ footer p {
 }
 
 @media screen and (max-width: 670px) {
-  .nav-container {
+  header .nav-container {
     display: none;
   }
 
-  .burger {
+  header .burger {
     display: block;
     padding-right: 35px;
     padding-bottom: 20px;
@@ -198,7 +213,7 @@ footer p {
     color: var(--color-primary);
   }
   
-  #menuchk:checked + nav{
+  header #menuchk:checked + nav{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -209,28 +224,28 @@ footer p {
   }
   
 
-  .content-container {
+  article {
     display: flex;
     justify-content: center;
     padding-top: 50px;
   }
 
-  .content h1{
+  article .content h1{
     font-size: 2rem;
   }
 
-  .content-container img {
+  article img {
     width: 85%;
   }
 
-  .card-container {
+  main {
     display: flex;
     flex-direction: column;
     grid-template-columns: 1fr;
     padding-top: 100px;
   }
 
-  .card-gradient {
+  main .card-gradient {
     display: flex;
     flex-wrap: wrap;
     order: -1;

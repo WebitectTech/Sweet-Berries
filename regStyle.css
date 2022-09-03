@@ -17,7 +17,12 @@ main {
     display: flex;
     justify-content: center;
     height: 32rem;
+    margin-bottom: 40px;
 }
+
+/**
+* ! Left Side Of Container
+**/
 
 .container-left {
     border-top-left-radius: 10px;
@@ -27,35 +32,59 @@ main {
 }
 
 .container-left h2 {
+    background-color: var(--color-primary);
     padding: 10px;
     color: white;
     text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
 }
 
 .container-left p {
     padding: 20px;
+    color: white;
+    font-size: 18px;
 }
 
 .image-container {
     display: flex;
+    padding-top: 35px;
 }
 
 .image-one, .image-two {
-    border: 1px solid black;
-    border-radius: 50%;
+    border: 2px solid black;
+    border-radius: 10%;
     height: 190px;
-    filter: drop-shadow(1px 2px 4px black);
-    transform: rotate(10deg);
+    cursor: pointer;
+    transition: ease-in-out .3s;
 }
 
 .image-two {
     position: relative;
-    margin: 10px;
-    top: 20px;
+    margin-left: 35px;
+    top: 27px;
 }
 
+.image-two:hover {
+    position: relative;
+    width: 160px;
+    height: 150px;
+    top: 20px;
+    transition: ease-in-out .3s;
+}
 
+.image-one:hover {
+    position: relative;
+    width: 160px;
+    height: 150px;
+    top: 20px;
+    transition: ease-in-out .3s;
+}
 
+/**
+* ! Right Side Of Container
+**/
 
 .container-right {
     border-top-right-radius: 10px;
@@ -63,11 +92,18 @@ main {
     border: 1px solid black;
     text-align: center;
     padding: 20px;
-    width: 20%;
+    width: 30%;
 }
 
 .container-right h2 {
+    background-color: var(--color-primary);
     padding: 10px;
+    margin-bottom: 15px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
 }
 
 .container-right i {
@@ -127,12 +163,20 @@ main {
 }
 
 .container-right .account-name input {
-    width: 150px;
+    width: 170px;
     padding-left: 40px;
 }
 
 .container-right button {
     margin: 30px;
-    padding: 10px;
+    padding: 13px;
+    color: white;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px black;
+    background-color: var(--color-primary);
+    border: 1px solid black;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
