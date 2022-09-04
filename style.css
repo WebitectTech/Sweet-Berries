@@ -36,12 +36,20 @@ header #menuchk {
   display: none;
 }
 
+header .burger {
+  display: none;
+}
+
 header .nav-container {
   display: flex;
   align-items: center;
   padding: 75px;
   gap: 20px;
   font-size: 22px;
+}
+
+header .nav-container a {
+  color: var(--color-primary);
 }
 
 header .nav-container button {
@@ -54,21 +62,13 @@ header .nav-container button {
   font-weight: bold;
 }
 
-header.nav-container button a {
-  color: white;
+header .nav-container button a {
+  color: #FFFFFF;
 }
 
 /**
 * ! Start of Content Section
 **/
-
-.burger {
-  display: none;
-}
-
-a {
-  color: var(--color-primary);
-}
 
 article {
   display: flex;
@@ -109,7 +109,7 @@ main .card {
   display: flex;
   flex-direction: column;
   background: #FFFFFF;
-  box-shadow: 3px 8px 10px black;
+  box-shadow: 1px 3px 4px black;
   border-radius: 15px;
   justify-content: center;
   align-items: flex-start;
@@ -120,9 +120,14 @@ main .card {
   height: 250px;
 }
 
+main .card h2 {
+  padding-bottom: 10px;
+}
+
 main .card a {
   padding-top: 20px;
   font-weight: bold;
+  color: var(--color-primary);
 }
 
 main .cake-img {
@@ -242,13 +247,12 @@ footer p {
     display: flex;
     flex-direction: column;
     grid-template-columns: 1fr;
-    padding-top: 100px;
+    padding-top: 20px;
   }
 
   main .card-gradient {
-    display: flex;
-    flex-wrap: wrap;
     order: -1;
     height: 80px;
+    font-size: .8rem;
   }
 }
